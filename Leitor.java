@@ -1,26 +1,26 @@
-package principal;
+package leitor;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
-
+import java.util.TreeSet;
 
 public class Leitor {
 
 	/**
 	 * @param args
 	 */
-
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		Eleicao eleicao = Eleicao.getInstance();
 		try {
             // Parâmetros de leitura
 			Scanner entrada = new Scanner(new BufferedReader(new FileReader("vitoria2016.csv")));
-            entrada.useDelimiter("[;%]");
+            entrada.useDelimiter("[;%*#]");
             String lixo;
+            
+            TreeSet<Candidato> listaCandidatos = new TreeSet<Candidato>();
             
             // Leitura do arquivo
             lixo = entrada.nextLine();
@@ -29,13 +29,13 @@ public class Leitor {
             while(entrada.hasNext()) {
             	Candidato c = new Candidato();
             	c.lerCandidato(entrada);
-                entrada.nextLine(); // Desconsidera a quebra de linha
-                eleicao.addCandidato(c);
+                lixo = entrada.nextLine(); // Desconsidera a quebra de linha
+                listaCandidatos.add(c);
                 //System.out.println(c);
             }
             
             // Impressão da lista de Candidatos
-            for (Candidato aux : eleicao.getListaCandidatos()) {
+            for (Candidato aux : listaCandidatos) {
             	System.out.println(aux);
             }
 

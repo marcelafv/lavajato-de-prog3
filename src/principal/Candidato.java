@@ -1,6 +1,7 @@
 package principal;
 
 import java.util.Scanner;
+import java.util.Locale;
 
 public class Candidato implements Comparable<Candidato>{
 
@@ -10,9 +11,11 @@ public class Candidato implements Comparable<Candidato>{
 	
 	private int index, numCandidato;
 	private String nome;
-	private String[] partido;   // partido[0] é Partido e partido[1] é Coligação  ( divisão feita pelo split() )
-	private Double numVotos;
+	private Partido partido;
+	private Coligacao coligacao;
+	private int numVotos;
 	private String porcentagemVotos;
+	private boolean eleito;
 	
 	public int getIndex() {
 		return index;
@@ -25,12 +28,28 @@ public class Candidato implements Comparable<Candidato>{
 	public String getNome() {
 		return nome;
 	}
+	
+	public void setPartido(String s){
+		Partido p = new Partido(s);
+		p.addCandidato(this);
+		this.partido = Eleicao.getInstance().addPartido(p);
+	}
 
-	public String[] getPartido() {
+	public Partido getPartido() {
 		return partido;
 	}
 	
-	public Double getNumVotos() {
+	public void setColigacao(String s){
+		Coligacao c = new Coligacao(s);
+		c.addPartido(this.partido);
+		this.coligacao = Eleicao.getInstance().addColigacao(c);
+	}
+	
+	public Partido getColigacao() {
+		return partido;
+	}
+	
+	public int getNumVotos() {
 		return numVotos;
 	}
 
@@ -38,29 +57,60 @@ public class Candidato implements Comparable<Candidato>{
 		return porcentagemVotos;
 	}
 	
+	public boolean isEleito(){
+		return eleito;
+	}
+	
+	private void evalIndex(String s){
+		if(s.charAt(0) == '*'){
+			this.eleito = true;
+			this.index = Integer.parseInt(s.substring(1,5));
+		}else if(s.charAt(0) == '#'){
+			this.eleito = false;
+			this.index = Integer.parseInt(s.substring(1,5));
+		}else{
+			this.eleito = false;
+			this.index = Integer.parseInt(s);
+		}
+	}
+	
 	
 	public void lerCandidato(Scanner entrada) {
+		//Variavel temporária para partidoString, partidoString[0] é Partido e partidoString[1] é Coligação  ( divisão feita pelo split() )
+		String[] partidoString; 
 		/* Impressões de teste comentadas */
 		
-		index = Integer.parseInt(entrada.next());
-        //System.out.println("Index: "+index);
-        numCandidato = Integer.parseInt(entrada.next());
+		this.evalIndex(entrada.next());
+        
+		//System.out.println("Index: "+index);
+		this.numCandidato = Integer.parseInt(entrada.next());
         //System.out.println("Numero: "+numCandidato);
-        nome = entrada.next();
+		this.nome = entrada.next();
         //System.out.println("Nome: "+nome);
-        partido = entrada.next().split("-");
-        //System.out.println("Partido: "+partido);
+		partidoString = entrada.next().split("-");
+		
+		this.setPartido(partidoString[0]);
+		//System.out.println("Partido: "+partido);
+		//System.out.println(partidoString[1]);
+		
+		try{
+			this.setColigacao(partidoString[1]);
+		}catch(ArrayIndexOutOfBoundsException e){
+			this.coligacao = null;
+		}
+		
+        
         //coligacao = entrada.next();
-        numVotos = Double.parseDouble(entrada.next());
+		this.numVotos = Integer.parseInt(entrada.next());
         //System.out.println("Numero de votos: "+numVotos);
-        porcentagemVotos = entrada.next();
+		this.porcentagemVotos = entrada.next();
        	//System.out.println("Porcentagem: "+porcentagemVotos);
 	}
 	
 	@Override
 	public String toString() {
-		if (getPartido().length == 1) return getIndex()+" - "+getNome()+" ("+getPartido()[0]+", "+getNumVotos()+" votos)";
-		else return getIndex()+" - "+getNome()+" ("+getPartido()[0]+", "+getNumVotos()+" votos)	- Coligação: "+getPartido()[1];
+		if (getColigacao() != null) return getIndex()+" - "+getNome()+" ("+getPartido().getNome()+", "+getNumVotos()+" votos)";
+		else return getIndex()+" - "+getNome()+" ("+getPartido().getNome()+", "+getNumVotos()+" votos)	- Coligação: "+getColigacao().getNome();
 	}
 	
 	// Comparador por índice
@@ -68,6 +118,8 @@ public class Candidato implements Comparable<Candidato>{
 	public int compareTo(Candidato can) {
 	        return this.index - can.index;
 	}
+	
+	
 	
 	/*
 	// Comparador por número de votos
@@ -77,4 +129,9 @@ public class Candidato implements Comparable<Candidato>{
 		} 
 	} 
 	*/
+	
+	public boolean equals(Candidato c){
+		if(this.getNome() == c.getNome()) return true;
+		else return false;		
+	}
 }
