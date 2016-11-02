@@ -1,4 +1,4 @@
-package leitor;
+package principal;
 
 import java.util.Scanner;
 
@@ -66,7 +66,7 @@ public class Candidato implements Comparable<Candidato>{
 	// Comparador por índice
 	@Override
 	public int compareTo(Candidato can) {
-	        return index - can.index;
+	        return this.index - can.index;
 	}
 	
 	/*
