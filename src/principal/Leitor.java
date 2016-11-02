@@ -16,6 +16,7 @@ public class Leitor {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		Eleicao eleicao = Eleicao.getInstance();
+		
 		try {
             // Parâmetros de leitura
 			Scanner entrada = new Scanner(new BufferedReader(new FileReader("vitoria2016.csv")));

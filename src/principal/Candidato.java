@@ -2,6 +2,8 @@ package principal;
 
 import java.util.Scanner;
 import java.util.Locale;
+import java.text.NumberFormat;
+import java.text.ParseException;
 
 public class Candidato implements Comparable<Candidato>{
 
@@ -77,7 +79,8 @@ public class Candidato implements Comparable<Candidato>{
 	
 	public void lerCandidato(Scanner entrada) {
 		//Variavel temporária para partidoString, partidoString[0] é Partido e partidoString[1] é Coligação  ( divisão feita pelo split() )
-		String[] partidoString; 
+		String[] partidoString;
+		NumberFormat f = NumberFormat.getIntegerInstance(Locale.forLanguageTag("pt-BR"));
 		/* Impressões de teste comentadas */
 		
 		this.evalIndex(entrada.next());
@@ -101,8 +104,13 @@ public class Candidato implements Comparable<Candidato>{
 		
         
         //coligacao = entrada.next();
-		this.numVotos = Integer.parseInt(entrada.next());
-        //System.out.println("Numero de votos: "+numVotos);
+		
+		try{
+		this.numVotos = f.parse(entrada.next()).intValue();
+		}catch (ParseException e){}
+		
+		
+		//System.out.println("Numero de votos: "+numVotos);
 		this.porcentagemVotos = entrada.next();
        	//System.out.println("Porcentagem: "+porcentagemVotos);
 	}
@@ -116,7 +124,7 @@ public class Candidato implements Comparable<Candidato>{
 	// Comparador por índice
 	@Override
 	public int compareTo(Candidato can) {
-	        return this.index - can.index;
+	        return this.numVotos - can.numVotos;
 	}
 	
 	
