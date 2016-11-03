@@ -3,7 +3,7 @@ package principal;
 import java.util.LinkedList;
 
 
-public class Partido {
+public class Partido implements Comparable<Partido>{
 	
 	private String nome;
 	private int votos;
@@ -24,14 +24,21 @@ public class Partido {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	
 	public int getVotos() {
-		return votos;
+		int nvotos = 0;
+		for (Candidato candidato : this.candidatos){
+				nvotos = nvotos + candidato.getNumVotos();
+		}
+		return nvotos;
 	}
+	
 	public void addVotos(int votos) {
 		this.votos = this.votos + votos;
 	}
 	
 	public boolean addCandidato(Candidato c){
+		this.addVotos(c.getNumVotos());
 		return candidatos.add(c);
 	}
 	
@@ -50,14 +57,19 @@ public class Partido {
 	}
 	
 	public boolean equals(Partido c){
-		if(this.getNome() == c.getNome()) return true;
-		else return false;		
+		if(this.getNome().equals(c.getNome())) return true;
+		else return false;			
 	}
 	
 	@Override
 	public String toString() {
-		return getNome()+ ", " + getVotos() + " votos , " + getNEleitos()+ " candidatos eleitos";
+		return getNome()+ ", " + this.getVotos() + " votos , " + getNEleitos()+ " candidatos eleitos";
 	}
-	
+
+	// Comparador por votos
+	@Override
+	public int compareTo(Partido p) {
+	        return  p.getVotos() - this.votos;
+	}
 
 }

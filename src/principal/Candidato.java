@@ -19,6 +19,10 @@ public class Candidato implements Comparable<Candidato>{
 	private String porcentagemVotos;
 	private boolean eleito;
 	
+	public void setIndex(int index) {
+		this.index = index;
+	}
+	
 	public int getIndex() {
 		return index;
 	}
@@ -32,9 +36,9 @@ public class Candidato implements Comparable<Candidato>{
 	}
 	
 	public void setPartido(String s){
-		Partido p = new Partido(s);
+		Partido p = Eleicao.getInstance().containsPartido(s);
 		p.addCandidato(this);
-		this.partido = Eleicao.getInstance().addPartido(p);
+		this.partido = p;
 	}
 
 	public Partido getPartido() {
@@ -42,13 +46,13 @@ public class Candidato implements Comparable<Candidato>{
 	}
 	
 	public void setColigacao(String s){
-		Coligacao c = new Coligacao(s);
+		Coligacao c = Eleicao.getInstance().containsColigacao(s);
 		c.addPartido(this.partido);
-		this.coligacao = Eleicao.getInstance().addColigacao(c);
+		this.coligacao = c;
 	}
 	
-	public Partido getColigacao() {
-		return partido;
+	public Coligacao getColigacao() {
+		return coligacao;
 	}
 	
 	public int getNumVotos() {
@@ -99,10 +103,9 @@ public class Candidato implements Comparable<Candidato>{
 		try{
 			this.setColigacao(partidoString[1]);
 		}catch(ArrayIndexOutOfBoundsException e){
-			this.coligacao = null;
+			this.setColigacao(partidoString[0]);;
 		}
 		
-        
         //coligacao = entrada.next();
 		
 		try{
@@ -117,14 +120,14 @@ public class Candidato implements Comparable<Candidato>{
 	
 	@Override
 	public String toString() {
-		if (getColigacao() != null) return getIndex()+" - "+getNome()+" ("+getPartido().getNome()+", "+getNumVotos()+" votos)";
-		else return getIndex()+" - "+getNome()+" ("+getPartido().getNome()+", "+getNumVotos()+" votos)	- Coligação: "+getColigacao().getNome();
+		if (getColigacao() == null) return getNome()+" ("+getPartido().getNome()+", "+getNumVotos()+" votos)";
+		else return getNome()+" ("+getPartido().getNome()+", "+getNumVotos()+" votos)	- Coligação: "+getColigacao().getNome();
 	}
 	
-	// Comparador por índice
+	// Comparador por votos
 	@Override
 	public int compareTo(Candidato can) {
-	        return this.numVotos - can.numVotos;
+	        return  can.numVotos - this.numVotos;
 	}
 	
 	
@@ -139,7 +142,7 @@ public class Candidato implements Comparable<Candidato>{
 	*/
 	
 	public boolean equals(Candidato c){
-		if(this.getNome() == c.getNome()) return true;
+		if(this.getNome().equals(c.getNome())) return true;
 		else return false;		
 	}
 }

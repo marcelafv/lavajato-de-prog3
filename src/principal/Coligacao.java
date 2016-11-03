@@ -3,7 +3,7 @@ package principal;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Coligacao {
+public class Coligacao implements Comparable<Coligacao>{
 	
 	private String nome;
 	private int votos;
@@ -24,15 +24,29 @@ public class Coligacao {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	
 	public int getVotos() {
-		return votos;
+		int nvotos = 0;
+		for (Partido partido : partidos){
+			for (Candidato candidato : partido.getCandidatos()){
+					nvotos = nvotos + candidato.getNumVotos();
+			}
+		}
+		return nvotos;
 	}
+	
 	public void addVotos(int votos) {
 		this.votos = this.votos + votos;
 	}
 	
 	public boolean addPartido(Partido p){
-		return partidos.add(p);
+		for(Partido partido : this.partidos){
+			if(partido.getNome().equals(p.getNome())){	
+				return true;
+			}
+		}
+		partidos.add(p);
+		return true;
 	}
 	
 	public List<Partido> getPartidos(){
@@ -50,13 +64,18 @@ public class Coligacao {
 	}
 	
 	public boolean equals(Coligacao c){
-		if(this.getNome() == c.getNome()) return true;
+		if(this.getNome().equals(c.getNome())) return true;
 		else return false;		
 	}
 	
 	@Override
 	public String toString() {
 		return getNome()+ ", " + getVotos() + ", " + getNEleitos();			
+	}
+	
+	@Override
+	public int compareTo(Coligacao p) {
+	        return  p.getVotos() - this.getVotos();
 	}
 
 }
