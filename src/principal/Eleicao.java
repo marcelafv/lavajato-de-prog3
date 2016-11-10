@@ -4,9 +4,13 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
+/* @ ELEIÇÃO
+ * Classe com as listas de candidatos, partidos e coligações
+ */
+
 public class Eleicao {
 	
-	private static Eleicao instancia = null;
+	private static Eleicao instancia = null;		// Definição do Singleton
 	
 	private LinkedList<Candidato> listaCandidatos;
 	private LinkedList<Partido>   listaPartidos;
@@ -18,12 +22,14 @@ public class Eleicao {
 		listaColigacoes =   new LinkedList<Coligacao>();	
 	}
 	
+	/* Inclusão de um candidato caso ele ainda não exista na lista */
 	public boolean addCandidato(Candidato c){
 		if(listaCandidatos.contains(c)){
 			return true;
 		}		
 		else return listaCandidatos.add(c);
 	}
+	
 	
 	public Partido addPartido(Partido p){
 		if(listaPartidos.contains(p)){
@@ -35,11 +41,13 @@ public class Eleicao {
 			}
 			
 			return p0;
-		}else{
-		listaPartidos.add(p);
-		return p;
+			
+		} else {
+			listaPartidos.add(p);
+			return p;
 		}
 	}
+	
 	
 	public Partido containsPartido(String s){
 		Partido p = new Partido(s);
@@ -63,17 +71,17 @@ public class Eleicao {
 		return c;
 	}
 	
+	/* Retorna uma shadow copy da lista de partidos em ordem decrescente por número de votos */
 	public List<Partido> getPartidos(){
 		List<Partido> partidos = (LinkedList<Partido>) this.listaPartidos.clone();	
 		Collections.sort(partidos);		
-		return partidos;
-	   
+		return partidos;   
 	}
 	
+	/* Retorna a lista de coligações em ordem decrescente por número de votos */
 	public List<Coligacao> getColigacoes(){
 		Collections.sort(this.listaColigacoes);
 		return this.listaColigacoes;
-		
 	}
 	
 	
@@ -96,6 +104,7 @@ public class Eleicao {
 		return listaCandidatos;
 	}
 
+	/* Criação do Singleton */
 	public static Eleicao getInstance(){
 		if(instancia == null){
 			instancia = new Eleicao();
@@ -104,6 +113,9 @@ public class Eleicao {
 		return instancia;
 	}
 	
+	/* ----- GERAÇÃO DE RELATÓRIOS ------ */
+	
+	/* Cálculo no número de vagas */
 	public int getNumVagas(){
 			int vagas = 0;
 		    for (Candidato aux : listaCandidatos) {
@@ -112,6 +124,7 @@ public class Eleicao {
 		    return vagas;
 	}
 	
+	/* Criação da lista de candidatos eleitos */
 	public List<Candidato> getEleitos(){
 		
 		LinkedList<Candidato> vereadores = (LinkedList<Candidato>) this.getListaCandidatos().clone();
@@ -123,6 +136,7 @@ public class Eleicao {
 		return eleitos;
 	}	
 	
+	/* Criação da lista de candidatos mais votados */
 	public List<Candidato> getMaisVotados(){
 		List<Candidato> maisVotados = (LinkedList<Candidato>)  this.getListaCandidatos().clone();	
 		Collections.sort(maisVotados);		
@@ -135,26 +149,27 @@ public class Eleicao {
 	   
 	}
 	
+	/* Criação da lista de candidatos eleitos que não estão entre os N (número de vagas) mais votados */
 	public List<Candidato> getBeneficiados(){
-		//analisa os eleitos que n�o est�o entre os N (numero de vagas) mais votados
 		LinkedList<Candidato> vereadores = (LinkedList<Candidato>) this.getListaCandidatos().clone();
 		List<Candidato> beneficiados = new LinkedList<Candidato>();
 		
-		Collections.sort(vereadores);
+		Collections.sort(vereadores);	// Ordenação dos vereadores por número decrescente de votos
 			
 		int vagas = this.getNumVagas()+1;
 		
 		for(Candidato aux : vereadores){
 			vagas--;
-			if(vagas >0) continue;
+			if(vagas > 0) continue;		// Os N mais votados não se encaixam na definição
 			if(aux.isEleito()) beneficiados.add(aux);
 			vagas--;
 		}
 		return beneficiados;
 	}
 	
+	/* Analisa os não-eleitos que estão entre os N (número de vagas) mais votados */
 	public List<Candidato> getPrejudicados(){
-		//analisa os n�o-eleitos que est�o entre os N (numero de vagas) mais votados
+		
 		LinkedList<Candidato> eleitos = (LinkedList<Candidato>) this.getListaCandidatos().clone();
 		List<Candidato> prejudicados = new LinkedList<Candidato>();
 		
@@ -162,11 +177,23 @@ public class Eleicao {
 			
 		int vagas = this.getNumVagas();
 		for(Candidato aux : eleitos){
-			if(vagas <=0) break;
+			if(vagas <=0) break;	// Os candidatos que não estão nas N primeiras posições não se encaixam na definição
 			if(!aux.isEleito()) prejudicados.add(aux);
 			vagas--;
 		}
 		return prejudicados;
 	}
 	
+	/* Cálculo do total de votos a partir do número de votos recebidos pelos partidos */
+	public int totalVotosNominais() {
+		int total = 0;
+		
+		for (Partido p : listaPartidos) {
+			total += p.getVotos();
+		}
+		
+		return total;
+	}
+	
 }
+

@@ -5,6 +5,10 @@ import java.util.Locale;
 import java.text.NumberFormat;
 import java.text.ParseException;
 
+/* @ CANDIDATO
+ * Classe com as informações dos candidatos
+ */
+
 public class Candidato implements Comparable<Candidato>{
 
 	/**
@@ -18,6 +22,8 @@ public class Candidato implements Comparable<Candidato>{
 	private int numVotos;
 	private String porcentagemVotos;
 	private boolean eleito;
+	
+	/* Setters e Getters */
 	
 	public void setIndex(int index) {
 		this.index = index;
@@ -36,7 +42,7 @@ public class Candidato implements Comparable<Candidato>{
 	}
 	
 	public void setPartido(String s){
-		Partido p = Eleicao.getInstance().containsPartido(s);
+		Partido p = Eleicao.getInstance().containsPartido(s);	// Verificação da existência do partido e inclusão (caso não exista)
 		p.addCandidato(this);
 		this.partido = p;
 	}
@@ -46,7 +52,7 @@ public class Candidato implements Comparable<Candidato>{
 	}
 	
 	public void setColigacao(String s){
-		Coligacao c = Eleicao.getInstance().containsColigacao(s);
+		Coligacao c = Eleicao.getInstance().containsColigacao(s);	// Verificação da existência da coligação e inclusão (caso não exista)
 		c.addPartido(this.partido);
 		this.coligacao = c;
 	}
@@ -63,59 +69,57 @@ public class Candidato implements Comparable<Candidato>{
 		return porcentagemVotos;
 	}
 	
+	/* Verificação se o candidato foi eleito
+	 * (a partir da classificação feita em 'evalIndex()' */
 	public boolean isEleito(){
 		return eleito;
 	}
 	
+	/* Classificação de  um candidato em 'eleito' (true ou false)
+	 * a partir da presença ou não dos caracteres '*' e '#' que acompanham o número de sequência
+	 * do candidato no arquivo de entrada.
+	 */
 	private void evalIndex(String s){
 		if(s.charAt(0) == '*'){
 			this.eleito = true;
-			this.index = Integer.parseInt(s.substring(1,5));
+			this.index = Integer.parseInt(s.substring(1,5));	// Garante a cópia do index apenas
 		}else if(s.charAt(0) == '#'){
 			this.eleito = false;
-			this.index = Integer.parseInt(s.substring(1,5));
+			this.index = Integer.parseInt(s.substring(1,5));	// Garante a cópia do index apenas
 		}else{
 			this.eleito = false;
 			this.index = Integer.parseInt(s);
 		}
 	}
 	
-	
+	/* Leitura das informações do candidato e criação do objeto relacionado
+	 * a partir do arquivo de entrada
+	 */
 	public void lerCandidato(Scanner entrada) {
-		//Variavel temporária para partidoString, partidoString[0] é Partido e partidoString[1] é Coligação  ( divisão feita pelo split() )
+		
+		/* Variável temporária para partidoString; partidoString[0] é Partido
+		   e partidoString[1] é Coligação  ( divisão feita pelo split() ) */
 		String[] partidoString;
+		
 		NumberFormat f = NumberFormat.getIntegerInstance(Locale.forLanguageTag("pt-BR"));
-		/* Impressões de teste comentadas */
-		
-		this.evalIndex(entrada.next());
-        
-		//System.out.println("Index: "+index);
+	
+		this.evalIndex(entrada.next());				// Classificação (eleito ou não) do candidato      
 		this.numCandidato = Integer.parseInt(entrada.next());
-        //System.out.println("Numero: "+numCandidato);
-		this.nome = entrada.next();
-        //System.out.println("Nome: "+nome);
-		partidoString = entrada.next().split("-");
-		
+		this.nome = entrada.next();			
+		partidoString = entrada.next().split("-");	// Divisão de partido e coligação
 		this.setPartido(partidoString[0]);
-		//System.out.println("Partido: "+partido);
-		//System.out.println(partidoString[1]);
 		
 		try{
-			this.setColigacao(partidoString[1]);
-		}catch(ArrayIndexOutOfBoundsException e){
-			this.setColigacao(partidoString[0]);;
+			this.setColigacao(partidoString[1]);	// Caso o candidato pertença a uma coligação
+		} catch(ArrayIndexOutOfBoundsException e){	
+			this.setColigacao(partidoString[0]);	// Caso o candidato pertença a um partido apenas
 		}
 		
-        //coligacao = entrada.next();
-		
 		try{
-		this.numVotos = f.parse(entrada.next()).intValue();
-		}catch (ParseException e){}
+			this.numVotos = f.parse(entrada.next()).intValue();
+		} catch (ParseException e){}
 		
-		
-		//System.out.println("Numero de votos: "+numVotos);
 		this.porcentagemVotos = entrada.next();
-       	//System.out.println("Porcentagem: "+porcentagemVotos);
 	}
 	
 	@Override
@@ -124,23 +128,13 @@ public class Candidato implements Comparable<Candidato>{
 		else return getNome()+" ("+getPartido().getNome()+", "+getNumVotos()+" votos)	- Coligação: "+getColigacao().getNome();
 	}
 	
-	// Comparador por votos
+	/* Comparador por votos */
 	@Override
 	public int compareTo(Candidato can) {
 	        return  can.numVotos - this.numVotos;
 	}
 	
-	
-	
-	/*
-	// Comparador por número de votos
-	public static class ComparadorVotos implements Comparator { 
-		public int compare(Object o1, Object o2) { 
-			return (((Candidato)o1).numVotos - ((Candidato)o2).numVotos); 
-		} 
-	} 
-	*/
-	
+	/* Verificação de candidatos repetidos por nome */
 	public boolean equals(Candidato c){
 		if(this.getNome().equals(c.getNome())) return true;
 		else return false;		
