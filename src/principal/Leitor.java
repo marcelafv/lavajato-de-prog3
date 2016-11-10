@@ -72,7 +72,7 @@ public class Leitor {
             
 			/* Parâmetros de leitura */
 
-			Scanner entrada = new Scanner(new BufferedReader(new FileReader("vitoria2016.csv")));
+			Scanner entrada = new Scanner(new BufferedReader(new FileReader(args[0])));
             entrada.useDelimiter("[;%]");
             String lixo;
             
