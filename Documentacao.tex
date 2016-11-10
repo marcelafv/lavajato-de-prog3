@@ -1,0 +1,95 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Gabriel Ferrari e Marcela Vieira}
+\title{vereadores-GabrielFerrari-MarcelaVieira}
+
+\begin{document}
+\begin{center}\textbf{
+\large UFES - CENTRO TECNOLÓGICO\\ DEPARTAMENTO DE INFORMÁTICA \\
+\normalsize Programação III
+\vfill
+GABRIEL FERRARI\\
+MARCELA VIEIRA}
+\vfill
+\begin{center}
+Processamento de dados da Eleição 2016 de vereadores
+\end{center}
+\vfill
+\textbf{
+\large Vitória\\
+11 de novembro de 2016}
+\pagestyle{empty}
+\end{center}
+\newpage
+
+\section{Introdução}
+O sistema  eleitoral brasileiro utiliza dois métodos de eleição de candidatos para posições de liderança no País: majoritária e proporcional.\\
+O programa criado analisa os resultados das eleições exportados pelo \textit{software} Divulga 2016, disponibilizado pela Justiça Eleitoral, e apresenta relaórios de diferentes resultados
+alternando-se os dois métodos de escolha de candidatos e comparando-os.\\
+Todos os dados provém do arquivo \texttt{CSV} exportado e são processados pelo programa escrito em linguagem \texttt{Java}.
+
+\section{Objetivos}
+Gerar relatórios na saída padrão a partir da leitura e manipulação de um arquivo de divulgação, determinado na linha de comando, acerca dos resultados de diversos Estados das Eleições 2016 de vereadores.\\
+
+\section{Metodologia}
+O programa lê o arquivo de entrada, cria listas de vereadores, cada qual com informações de nome, posição na divulgação final, partido, número de votos, entre outras, e listas de partidos e coligações.\\
+Essas listas são ordenadas por número de votos e o programa gera novos \textit{rankings} para as Eleições de acordo com os diferentes métodos de votação. É possível saber os diferentes resultados para os candidatos, partidos e coligações.
+
+\subsection{Candidato.java}
+Abstração dos candidatos à vereador cujos atributos são retirados da leitura individual das linhas do documento de entrada, exceto por \texttt{eleito}, que é um atributo booleano que facilita a identificação de candidatos eleitos em outras métodos do programa.\\
+\texttt{partido} e \texttt{coligação} referem-se a instâncias específicas de Partido e Coligação. Esse \textit{link} permite maior coesão entre as classes e aplicam-se bem ao contexto, pois todos os candidatos pertencem a um partido, os quais se relacionam dentro de coligações.\\
+
+\subsection{Partido.java}
+Abstração dos partidos contidos nas informações de cada candidato. Um partido tem nome, a quantidade total de votos recebidos pelos candidatos que o compõem e a lista de candidatos pertencentes a ele.\\
+
+\subsection{Coligacao.java}
+Abstração de coligações (conjunto de partidos), também referenciadas nas informações de entrada dos candidatos. Uma coligação tem nome, quantidade total de votos recebidos pelos candidatos dos partidos que a formam e a lista de partidos da coligação.\\
+
+\subsection{Eleicao.java}
+Esta classe contém as listas de partidos, vereadores e coligações de uma eleição e métodos para criar os diferentes relatórios descritos na especificação do trabalho.\\
+As primeiras funções são de criação, adição de objetos e outras comuns ao uso de listas. Na seção seguinte do arquivo, temos métodos específicos para cada relatório, que retornam os resultados para os métodos de impressão de \texttt{Leitor.java}.
+
+\subsection{Leitor.java}
+É a classe principal do programa, com as chamadas de leitura, criação e escrita dos resultados. Os métodos foram separados entre \texttt{Eleicao} e \texttt{Leitor} para que a classe principal contesse apenas a \texttt{main} e métodos estritamente necessários, garantindo a organização e clareza no entendimento do programa.
+
+\section{Resultados e Avaliação}
+O programa, como mencionado, recebe um arquivo \texttt{CSV}, faz a leitura e, para cada linha, cria um candidato com as informações contidas nessa linha e o adiciona à lista de candidatos. O método de leitura do candidato se encarrega de adicionar os partidos e coligações às suas respectivas listas.\\
+Os relatórios gerados pelo programa são:\\
+
+\subsubsection*{Número de Vagas}
+A contagem do número de vagas para vereador de uma cidade é realizada pela contagem de candidatos que apresentam um asterisco (*) antes do seu respectivo índice no arquivo de entrada. Os asteriscos representam os candidatos eleitos, logo, a quantidade de eleitos é igual a de vagas.\\
+Durante a leitura de candidatos, o objeto recebe o valor \texttt{true} no atributo \texttt{eleito} caso apresente o asterisco. A função \texttt{getNumVagas} passa por toda a lista de candidatos contando os candidatos classificados como "eleito".
+
+\subsubsection*{Candidatos Eleitos}
+A função \texttt{getEleitos} cria uma lista com todos os candidatos eleitos (segundo o mesmo método citado anteriormente) e a retorna para impressão. Os candidatos da lista são escritos conforme a formatação abaixo:
+\begin{center}
+\texttt{1 - FABRÍCIO GANDINI (PPS , 7611 votos)	- Coligação:  PPS / PROS}\\
+\end{center}
+
+\subsubsection*{Candidatos mais votados dentro do número de vagas}
+Para apresentar os candidatos mais votados, é necessário apenas ordená-los por número decrescente de vagas. Para reordená-los com esse critério sem alterar a lista original, a função \texttt{getMaisVotados} cria uma \textit{cópia} da lista original com o método \texttt{clone()} e reordena a lista copiada com o comparador por número de votos sobrescrito em \texttt{Candidato.java}.\\
+O índice de cada candidato também é alterado segundo a nova ordem da lista.
+
+\subsubsection*{Candidatos não eleitos e que seriam eleitos se a votação fosse majoritária}
+Este relatório é gerado pela função \texttt{getPrejudicados}, que clona a lista de candidatos e a ordena pelo número de votos (de forma decrescente). Desconsiderando os candidatos que estão nas N primeira posições (em que N é o número de vagas), já que esses foram eleitos, analisa os próximos candidatos da lista que tem valor \texttt{false} no atributo \texttt{eleito}.
+
+
+\subsubsection*{Candidatos que não seriam eleitos se a eleição fosse majoritária}
+Com a lista clonada ordenada por número decrescente de votos, a função \texttt{getBeneficiados} retorna os candidatos eleitos a partir da posição N+1 (em que N é a quantidade de vagas).
+
+\subsubsection*{Total de votos por coligação/partido e número de candidatos eleitos}
+Este relatório envolve, simplesmente, a impressão da lista de coligações ordenada por número decrescente de votos na sua criação. Dentro de \texttt{toString}, a função \texttt{getNEleitos} soma a quantidade de candidatos eleitos fazendo uma iteração sobre a lista de partidos que fazem parte da coligação.
+
+\subsubsection*{Total de votos por partido e número de candidatos eleitos}
+Funciona de forma análoga ao relatório anterior, mas utilizando a lista de partidos.
+
+\subsubsection*{Total de votos nominais}
+A função \texttt{totalVotosNominais} percorre a lista de partidos somando os valores no atributo "votos" de cada partido e retorna o total.\\
+
+\\Os testes realizados com os arquivos disponibilizados para três cidades mostram os resultados esperados.\\
+
+\end{document}
