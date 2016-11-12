@@ -4,6 +4,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=cyan,
+}
+\urlstyle{same}
+
 \author{Gabriel Ferrari e Marcela Vieira}
 \title{vereadores-GabrielFerrari-MarcelaVieira}
 
@@ -90,6 +98,7 @@ Funciona de forma análoga ao relatório anterior, mas utilizando a lista de par
 \subsubsection*{Total de votos nominais}
 A função \texttt{totalVotosNominais} percorre a lista de partidos somando os valores no atributo "votos" de cada partido e retorna o total.\\
 
-\\Os testes realizados com os arquivos disponibilizados para três cidades mostram os resultados esperados.\\
+\\Os testes realizados com os arquivos disponibilizados para as três cidades mostram os resultados esperados. Os arquivos com mais detalhes se encontram no \href{https://github.com/Smykke/lavajato-de-prog3}{repositório relacionado}.\\
+\textit{Known bugs:} há um erro de formatação na impressão do resultado dos partidos e coligações, que apresenta \textit{'s'} no fim de "candidato" e "eleito" nas quantidades 0 e 1  apesar de haver um comparador lógico para essas situações.\\
 
 \end{document}
