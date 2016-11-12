@@ -1,0 +1,104 @@
+Número de vagas: 17
+
+Vereadores eleitos:
+1 - ARNALDINHO BORGO (PMDB , 5392 votos)	- Coligação:  DEM / PMDB / SD
+2 - IVAN CARLINI (DEM , 4726 votos)	- Coligação:  DEM / PMDB / SD
+3 - RICARDO CHIABAI (PPS , 4268 votos)	- Coligação:  PDT / PSB / PPS
+4 - ROGERIO CARDOSO (DEM , 3863 votos)	- Coligação:  DEM / PMDB / SD
+5 - ANADELSO PEREIRA (PSDC , 3135 votos)	- Coligação:  PRB / PSDC / REDE
+6 - OSVALDO MATURANO (PRB , 2969 votos)	- Coligação:  PRB / PSDC / REDE
+7 - BRUNO LORENZUTTI (PTN, 2831 votos)	- Coligação: PTN
+8 - ADEILSON HORTI SUPER (PSD , 2827 votos)	- Coligação:  PSD / PSC / PV
+9 - REGINALDO ALMEIDA (PSC , 2769 votos)	- Coligação:  PSD / PSC / PV
+10 - TIA NILMA (PRP, 2419 votos)	- Coligação: PRP
+11 - VALDIR DO RESTAURANTE (PT do B , 2346 votos)	- Coligação:  PP / PT do B / PC do B / PROS
+12 - DONA ARLETE (PSL , 2183 votos)	- Coligação:  PSL / PMB
+13 - MIRIM MONTEBELLER (PTN, 2174 votos)	- Coligação: PTN
+14 - HELIOSANDRO (PR , 2053 votos)	- Coligação:  PSDB / PR
+15 - PATRICIA CRIZANTO (PMB , 2007 votos)	- Coligação:  PSL / PMB
+16 - ZÉ DO RENASCER (PTC , 1941 votos)	- Coligação:  PTB / PTC / PEN
+17 - PM CHICO SIQUEIRA (PHS , 1585 votos)	- Coligação:  PHS / PMN
+
+Candidatos mais votados (em ordem decrescente de votação e respeitando número de vagas):
+1 - ARNALDINHO BORGO (PMDB , 5392 votos)	- Coligação:  DEM / PMDB / SD
+2 - IVAN CARLINI (DEM , 4726 votos)	- Coligação:  DEM / PMDB / SD
+3 - RICARDO CHIABAI (PPS , 4268 votos)	- Coligação:  PDT / PSB / PPS
+4 - ROGERIO CARDOSO (DEM , 3863 votos)	- Coligação:  DEM / PMDB / SD
+5 - JOEL RANGEL (PMDB , 3609 votos)	- Coligação:  DEM / PMDB / SD
+6 - MARCOS RODRIGUES (DEM , 3310 votos)	- Coligação:  DEM / PMDB / SD
+7 - ANADELSO PEREIRA (PSDC , 3135 votos)	- Coligação:  PRB / PSDC / REDE
+8 - OSVALDO MATURANO (PRB , 2969 votos)	- Coligação:  PRB / PSDC / REDE
+9 - BRUNO LORENZUTTI (PTN, 2831 votos)	- Coligação: PTN
+10 - ADEILSON HORTI SUPER (PSD , 2827 votos)	- Coligação:  PSD / PSC / PV
+11 - REGINALDO ALMEIDA (PSC , 2769 votos)	- Coligação:  PSD / PSC / PV
+12 - TIA NILMA (PRP, 2419 votos)	- Coligação: PRP
+13 - VALDIR DO RESTAURANTE (PT do B , 2346 votos)	- Coligação:  PP / PT do B / PC do B / PROS
+14 - ZÉ FERREIRA DA MATERNIDADE (PSC , 2198 votos)	- Coligação:  PSD / PSC / PV
+15 - DONA ARLETE (PSL , 2183 votos)	- Coligação:  PSL / PMB
+16 - MIRIM MONTEBELLER (PTN, 2174 votos)	- Coligação: PTN
+17 - JOÃO ARTEM (PSB , 2087 votos)	- Coligação:  PDT / PSB / PPS
+
+Teriam sido eleitos se a votação fosse majoritária, e não foram eleitos:
+(com sua posição no ranking de mais votados)
+5 - JOEL RANGEL (PMDB , 3609 votos)	- Coligação:  DEM / PMDB / SD
+6 - MARCOS RODRIGUES (DEM , 3310 votos)	- Coligação:  DEM / PMDB / SD
+14 - ZÉ FERREIRA DA MATERNIDADE (PSC , 2198 votos)	- Coligação:  PSD / PSC / PV
+17 - JOÃO ARTEM (PSB , 2087 votos)	- Coligação:  PDT / PSB / PPS
+
+Eleitos, que se beneficiaram do sistema proporcional:
+(com sua posição no ranking de mais votados)
+18 - HELIOSANDRO (PR , 2053 votos)	- Coligação:  PSDB / PR
+19 - PATRICIA CRIZANTO (PMB , 2007 votos)	- Coligação:  PSL / PMB
+23 - ZÉ DO RENASCER (PTC , 1941 votos)	- Coligação:  PTB / PTC / PEN
+32 - PM CHICO SIQUEIRA (PHS , 1585 votos)	- Coligação:  PHS / PMN
+
+Votação (nominal) das coligações e número de candidatos eleitos:
+1 - Coligação:  DEM / PMDB / SD, 26823 votos, 3 candidatos eleitos.
+2 - Coligação: PTN, 22879 votos, 2 candidatos eleitos.
+3 - Coligação:  PSL / PMB, 20677 votos, 2 candidatos eleitos.
+4 - Coligação:  PRB / PSDC / REDE, 19577 votos, 2 candidatos eleitos.
+5 - Coligação:  PSD / PSC / PV, 18473 votos, 2 candidatos eleitos.
+6 - Coligação: PRP, 16990 votos, 1 candidatos eleitos.
+7 - Coligação:  PDT / PSB / PPS, 16203 votos, 1 candidatos eleitos.
+8 - Coligação:  PTB / PTC / PEN, 14667 votos, 1 candidatos eleitos.
+9 - Coligação:  PP / PT do B / PC do B / PROS, 14582 votos, 1 candidatos eleitos.
+10 - Coligação:  PHS / PMN, 13978 votos, 1 candidatos eleitos.
+11 - Coligação:  PSDB / PR, 13019 votos, 1 candidatos eleitos.
+12 - Coligação:  PT / PPL, 7088 votos, 0 candidatos eleitos.
+13 - Coligação: PSOL, 1403 votos, 0 candidatos eleitos.
+14 - Coligação: PRTB, 0 votos, 0 candidato eleito.
+
+Votação (nominal) dos partidos e número de candidatos eleitos:
+1 - PTN, 22879 votos, 2 candidatos eleitos
+2 - PSL , 17706 votos, 1 candidatos eleitos
+3 - PRP, 16990 votos, 1 candidatos eleitos
+4 - DEM , 16079 votos, 2 candidatos eleitos
+5 - PHS , 10355 votos, 1 candidatos eleitos
+6 - PMDB , 9001 votos, 1 candidatos eleitos
+7 - PSDB , 8999 votos, 0 candidatos eleitos
+8 - PSD , 8584 votos, 1 candidatos eleitos
+9 - PEN , 8141 votos, 0 candidatos eleitos
+10 - PSDC , 8126 votos, 1 candidatos eleitos
+11 - PRB , 8069 votos, 1 candidatos eleitos
+12 - PSC , 6236 votos, 1 candidatos eleitos
+13 - PPS , 5966 votos, 1 candidatos eleitos
+14 - PT do B , 5810 votos, 1 candidatos eleitos
+15 - PDT , 5317 votos, 0 candidatos eleitos
+16 - PT , 5247 votos, 0 candidatos eleitos
+17 - PSB , 4920 votos, 0 candidatos eleitos
+18 - PTC , 4804 votos, 1 candidatos eleitos
+19 - PP , 4426 votos, 0 candidatos eleitos
+20 - PR , 4020 votos, 1 candidatos eleitos
+21 - PV , 3653 votos, 0 candidatos eleitos
+22 - PMN , 3623 votos, 0 candidatos eleitos
+23 - PROS , 3436 votos, 0 candidatos eleitos
+24 - REDE , 3382 votos, 0 candidatos eleitos
+25 - PMB , 2971 votos, 1 candidatos eleitos
+26 - PPL , 1841 votos, 0 candidatos eleitos
+27 - SD , 1743 votos, 0 candidatos eleitos
+28 - PTB , 1722 votos, 0 candidatos eleitos
+29 - PSOL, 1403 votos, 0 candidatos eleitos
+30 - PC do B , 910 votos, 0 candidatos eleitos
+31 - PRTB, 0 votos, 0 candidato eleito
+
+Total de votos nominais: 206359

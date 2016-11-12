@@ -1,0 +1,102 @@
+Número de vagas: 15
+
+Vereadores eleitos:
+1 - FABRÍCIO GANDINI (PPS , 7611 votos)	- Coligação:  PPS / PROS
+2 - DENNINHO (PPS , 6167 votos)	- Coligação:  PPS / PROS
+3 - DAVI ESMAEL (PSB , 5165 votos)	- Coligação:  PSB / PHS
+4 - VINICIUS SIMÕES (PPS , 4403 votos)	- Coligação:  PPS / PROS
+5 - NEUZINHA (PSDB , 3652 votos)	- Coligação:  PSC / PSDB
+6 - LEONIL (PPS , 3577 votos)	- Coligação:  PPS / PROS
+7 - NATHAN MEDEIROS (PSB , 3316 votos)	- Coligação:  PSB / PHS
+8 - MAZINHO (PSD , 3090 votos)	- Coligação:  SD / PMB / PSD / PRTB / PTC
+9 - DALTO NEVES (PTB, 3083 votos)	- Coligação: PTB
+10 - MAX DA MATA (PDT, 2339 votos)	- Coligação: PDT
+11 - WANDERSON MARINHO (PSC , 2208 votos)	- Coligação:  PSC / PSDB
+12 - SANDRO PARRINI (PDT, 2024 votos)	- Coligação: PDT
+13 - LUIZ PAULO AMORIM (PV , 1696 votos)	- Coligação:  PP / PV / REDE
+14 - ROBERTO MARTINS (PTB, 1547 votos)	- Coligação: PTB
+15 - CLEBER FELIX (CLEBINHO) (PP , 1524 votos)	- Coligação:  PP / PV / REDE
+
+Candidatos mais votados (em ordem decrescente de votação e respeitando número de vagas):
+1 - FABRÍCIO GANDINI (PPS , 7611 votos)	- Coligação:  PPS / PROS
+2 - DENNINHO (PPS , 6167 votos)	- Coligação:  PPS / PROS
+3 - DAVI ESMAEL (PSB , 5165 votos)	- Coligação:  PSB / PHS
+4 - VINICIUS SIMÕES (PPS , 4403 votos)	- Coligação:  PPS / PROS
+5 - CAMILA VALADÃO (PSOL, 3727 votos)	- Coligação: PSOL
+6 - NEUZINHA (PSDB , 3652 votos)	- Coligação:  PSC / PSDB
+7 - ZEZITO MAIO (PMDB, 3590 votos)	- Coligação: PMDB
+8 - LEONIL (PPS , 3577 votos)	- Coligação:  PPS / PROS
+9 - NATHAN MEDEIROS (PSB , 3316 votos)	- Coligação:  PSB / PHS
+10 - LUIZ EMANUEL (PPS , 3138 votos)	- Coligação:  PPS / PROS
+11 - MAZINHO (PSD , 3090 votos)	- Coligação:  SD / PMB / PSD / PRTB / PTC
+12 - DALTO NEVES (PTB, 3083 votos)	- Coligação: PTB
+13 - ROGERINHO PINHEIRO (PHS , 2961 votos)	- Coligação:  PSB / PHS
+14 - DEVANIR FERREIRA (PRB , 2948 votos)	- Coligação:  PRB / PEN / PPL / PSDC / PC do B
+15 - MAURICIO LEITE (PMDB, 2864 votos)	- Coligação: PMDB
+
+Teriam sido eleitos se a votação fosse majoritária, e não foram eleitos:
+(com sua posição no ranking de mais votados)
+5 - CAMILA VALADÃO (PSOL, 3727 votos)	- Coligação: PSOL
+7 - ZEZITO MAIO (PMDB, 3590 votos)	- Coligação: PMDB
+10 - LUIZ EMANUEL (PPS , 3138 votos)	- Coligação:  PPS / PROS
+13 - ROGERINHO PINHEIRO (PHS , 2961 votos)	- Coligação:  PSB / PHS
+14 - DEVANIR FERREIRA (PRB , 2948 votos)	- Coligação:  PRB / PEN / PPL / PSDC / PC do B
+15 - MAURICIO LEITE (PMDB, 2864 votos)	- Coligação: PMDB
+
+Eleitos, que se beneficiaram do sistema proporcional:
+(com sua posição no ranking de mais votados)
+17 - MAX DA MATA (PDT, 2339 votos)	- Coligação: PDT
+18 - WANDERSON MARINHO (PSC , 2208 votos)	- Coligação:  PSC / PSDB
+20 - SANDRO PARRINI (PDT, 2024 votos)	- Coligação: PDT
+26 - LUIZ PAULO AMORIM (PV , 1696 votos)	- Coligação:  PP / PV / REDE
+30 - ROBERTO MARTINS (PTB, 1547 votos)	- Coligação: PTB
+33 - CLEBER FELIX (CLEBINHO) (PP , 1524 votos)	- Coligação:  PP / PV / REDE
+
+Votação (nominal) das coligações e número de candidatos eleitos:
+1 - Coligação:  PPS / PROS, 32411 votos, 4 candidatos eleitos.
+2 - Coligação:  PSB / PHS, 17676 votos, 2 candidatos eleitos.
+3 - Coligação:  PSC / PSDB, 16459 votos, 2 candidatos eleitos.
+4 - Coligação: PDT, 16050 votos, 2 candidatos eleitos.
+5 - Coligação: PTB, 15729 votos, 2 candidatos eleitos.
+6 - Coligação:  PP / PV / REDE, 14755 votos, 2 candidatos eleitos.
+7 - Coligação:  PRB / PEN / PPL / PSDC / PC do B, 11042 votos, 0 candidatos eleitos.
+8 - Coligação:  SD / PMB / PSD / PRTB / PTC, 10572 votos, 1 candidatos eleitos.
+9 - Coligação:  PTN / DEM / PR / PT do B, 10318 votos, 0 candidatos eleitos.
+10 - Coligação: PMDB, 9119 votos, 0 candidatos eleitos.
+11 - Coligação: PT, 7885 votos, 0 candidatos eleitos.
+12 - Coligação:  PRP / PMN / PSL, 6178 votos, 0 candidatos eleitos.
+13 - Coligação: PSOL, 3727 votos, 0 candidatos eleitos.
+
+Votação (nominal) dos partidos e número de candidatos eleitos:
+1 - PPS , 31036 votos, 4 candidatos eleitos
+2 - PDT, 16050 votos, 2 candidatos eleitos
+3 - PTB, 15729 votos, 2 candidatos eleitos
+4 - PSB , 12029 votos, 2 candidatos eleitos
+5 - PMDB, 9119 votos, 0 candidatos eleitos
+6 - PSDB , 9006 votos, 1 candidatos eleitos
+7 - PT, 7885 votos, 0 candidatos eleitos
+8 - PV , 7748 votos, 1 candidatos eleitos
+9 - PSC , 7453 votos, 1 candidatos eleitos
+10 - PP , 6396 votos, 1 candidatos eleitos
+11 - PHS , 5647 votos, 0 candidatos eleitos
+12 - PRB , 4618 votos, 0 candidatos eleitos
+13 - DEM , 4367 votos, 0 candidatos eleitos
+14 - PSD , 3899 votos, 1 candidatos eleitos
+15 - PSOL, 3727 votos, 0 candidatos eleitos
+16 - PTN , 3692 votos, 0 candidatos eleitos
+17 - SD , 3339 votos, 0 candidatos eleitos
+18 - PRP , 3199 votos, 0 candidatos eleitos
+19 - PMB , 2652 votos, 0 candidatos eleitos
+20 - PC do B , 2025 votos, 0 candidatos eleitos
+21 - PSDC , 2020 votos, 0 candidatos eleitos
+22 - PMN , 1762 votos, 0 candidatos eleitos
+23 - PT do B , 1613 votos, 0 candidatos eleitos
+24 - PROS , 1375 votos, 0 candidatos eleitos
+25 - PPL , 1302 votos, 0 candidatos eleitos
+26 - PSL , 1217 votos, 0 candidatos eleitos
+27 - PEN , 1077 votos, 0 candidatos eleitos
+28 - PTC , 682 votos, 0 candidatos eleitos
+29 - PR , 646 votos, 0 candidatos eleitos
+30 - REDE , 611 votos, 0 candidatos eleitos
+
+Total de votos nominais: 171921

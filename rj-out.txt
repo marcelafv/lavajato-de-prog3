@@ -1,0 +1,204 @@
+Número de vagas: 51
+
+Vereadores eleitos:
+1 - CARLOS BOLSONARO (PSC, 106657 votos)	- Coligação: PSC
+2 - TARCÍSIO MOTTA (PSOL , 90473 votos)	- Coligação:  PSOL / PCB
+3 - CESAR MAIA (DEM, 71468 votos)	- Coligação: DEM
+4 - ROSA FERNANDES (PMDB, 57868 votos)	- Coligação: PMDB
+5 - MARIELLE FRANCO (PSOL , 46502 votos)	- Coligação:  PSOL / PCB
+6 - JUNIOR DA LUCINHA (PMDB, 45124 votos)	- Coligação: PMDB
+7 - VERA LINS (PP, 36117 votos)	- Coligação: PP
+8 - JOÃO MENDES DE JESUS (PRB, 31516 votos)	- Coligação: PRB
+9 - TERESA BERGHER (PSDB , 30566 votos)	- Coligação:  PSDB / PPS
+10 - LEANDRO LYRA (NOVO, 29217 votos)	- Coligação: NOVO
+11 - CARLO CAIADO (DEM, 28122 votos)	- Coligação: DEM
+12 - JORGE FELIPPE (PMDB, 28104 votos)	- Coligação: PMDB
+13 - JAIRINHO (PMDB, 26047 votos)	- Coligação: PMDB
+14 - THIAGO K. RIBEIRO (PMDB, 24900 votos)	- Coligação: PMDB
+15 - ALEXANDRE ISQUIERDO (DEM, 24701 votos)	- Coligação: DEM
+16 - MARCELINO D'ALMEIDA (PP, 24196 votos)	- Coligação: PP
+17 - CHIQUINHO BRAZÃO (PMDB, 23923 votos)	- Coligação: PMDB
+18 - TÂNIA BASTOS' (PRB, 22930 votos)	- Coligação: PRB
+19 - RAFAEL ALOISIO FREITAS (PMDB, 22897 votos)	- Coligação: PMDB
+20 - BISPO INALDO SILVA (PRB, 22735 votos)	- Coligação: PRB
+21 - ZICO (PTB, 21565 votos)	- Coligação: PTB
+22 - WILLIAN COELHO (PMDB, 20678 votos)	- Coligação: PMDB
+23 - VERÔNICA COSTA (PMDB, 19946 votos)	- Coligação: PMDB
+24 - DR. CARLOS EDUARDO (SD , 19822 votos)	- Coligação:  SD / PSL
+25 - REIMONT (PT , 19626 votos)	- Coligação:  PT / PC do B
+26 - RENATO CINCO (PSOL , 17162 votos)	- Coligação:  PSOL / PCB
+27 - LUCIANA NOVAES (PT , 16679 votos)	- Coligação:  PT / PC do B
+28 - MARCELO ARAR (PTB, 16230 votos)	- Coligação: PTB
+29 - VAL (PEN , 15388 votos)	- Coligação:  PRTB / PROS / PEN
+30 - PAULO MESSINA (PROS , 15346 votos)	- Coligação:  PRTB / PROS / PEN
+31 - ROGERIO ROCAL (PTB, 15055 votos)	- Coligação: PTB
+32 - DR. JOÃO RICARDO (PMDB, 14994 votos)	- Coligação: PMDB
+33 - RENATO MOURA (PDT, 13572 votos)	- Coligação: PDT
+34 - MARCELLO SICILIANO (PHS, 13553 votos)	- Coligação: PHS
+35 - DRº JORGE MANAIA (SD , 13249 votos)	- Coligação:  SD / PSL
+36 - PAULO PINHEIRO (PSOL , 13141 votos)	- Coligação:  PSOL / PCB
+37 - JONES MOURA (PSD, 12722 votos)	- Coligação: PSD
+38 - DR GILBERTO (PMN, 12165 votos)	- Coligação: PMN
+39 - FERNANDO WILLIAM (PDT, 12055 votos)	- Coligação: PDT
+40 - LEONEL BRIZOLA NETO (PSOL , 11087 votos)	- Coligação:  PSOL / PCB
+41 - ELISEU KESSLER (PSD, 10777 votos)	- Coligação: PSD
+42 - FELIPE MICHEL (PSDB , 10300 votos)	- Coligação:  PSDB / PPS
+43 - CLÁUDIO CASTRO (PSC, 10262 votos)	- Coligação: PSC
+44 - PROFESSOR ADALMIR (PSDB , 8804 votos)	- Coligação:  PSDB / PPS
+45 - PROFESSOR CELIO LUPPARELLI (DEM, 8692 votos)	- Coligação: DEM
+46 - LUIZ CARLOS RAMOS FILHO (PTN, 8618 votos)	- Coligação: PTN
+47 - JAIR DA MENDES GOMES (PMN, 8112 votos)	- Coligação: PMN
+48 - ZICO BACANA (PHS, 7932 votos)	- Coligação: PHS
+49 - OTONI DE PAULA JR (PSC, 7801 votos)	- Coligação: PSC
+50 - DAVID MIRANDA (PSOL , 7012 votos)	- Coligação:  PSOL / PCB
+51 - ITALO CIBA (PT do B , 6023 votos)	- Coligação:  PT do B / PTC
+
+Candidatos mais votados (em ordem decrescente de votação e respeitando número de vagas):
+1 - CARLOS BOLSONARO (PSC, 106657 votos)	- Coligação: PSC
+2 - TARCÍSIO MOTTA (PSOL , 90473 votos)	- Coligação:  PSOL / PCB
+3 - CESAR MAIA (DEM, 71468 votos)	- Coligação: DEM
+4 - ROSA FERNANDES (PMDB, 57868 votos)	- Coligação: PMDB
+5 - MARIELLE FRANCO (PSOL , 46502 votos)	- Coligação:  PSOL / PCB
+6 - JUNIOR DA LUCINHA (PMDB, 45124 votos)	- Coligação: PMDB
+7 - VERA LINS (PP, 36117 votos)	- Coligação: PP
+8 - JOÃO MENDES DE JESUS (PRB, 31516 votos)	- Coligação: PRB
+9 - TERESA BERGHER (PSDB , 30566 votos)	- Coligação:  PSDB / PPS
+10 - LEANDRO LYRA (NOVO, 29217 votos)	- Coligação: NOVO
+11 - CARLO CAIADO (DEM, 28122 votos)	- Coligação: DEM
+12 - JORGE FELIPPE (PMDB, 28104 votos)	- Coligação: PMDB
+13 - JAIRINHO (PMDB, 26047 votos)	- Coligação: PMDB
+14 - THIAGO K. RIBEIRO (PMDB, 24900 votos)	- Coligação: PMDB
+15 - ALEXANDRE ISQUIERDO (DEM, 24701 votos)	- Coligação: DEM
+16 - MARCELINO D'ALMEIDA (PP, 24196 votos)	- Coligação: PP
+17 - CHIQUINHO BRAZÃO (PMDB, 23923 votos)	- Coligação: PMDB
+18 - TÂNIA BASTOS' (PRB, 22930 votos)	- Coligação: PRB
+19 - RAFAEL ALOISIO FREITAS (PMDB, 22897 votos)	- Coligação: PMDB
+20 - BISPO INALDO SILVA (PRB, 22735 votos)	- Coligação: PRB
+21 - ZICO (PTB, 21565 votos)	- Coligação: PTB
+22 - WILLIAN COELHO (PMDB, 20678 votos)	- Coligação: PMDB
+23 - VERÔNICA COSTA (PMDB, 19946 votos)	- Coligação: PMDB
+24 - DR. CARLOS EDUARDO (SD , 19822 votos)	- Coligação:  SD / PSL
+25 - REIMONT (PT , 19626 votos)	- Coligação:  PT / PC do B
+26 - RENATO CINCO (PSOL , 17162 votos)	- Coligação:  PSOL / PCB
+27 - LUCIANA NOVAES (PT , 16679 votos)	- Coligação:  PT / PC do B
+28 - MARCELO ARAR (PTB, 16230 votos)	- Coligação: PTB
+29 - RENATA GUERRA (NOVO, 16064 votos)	- Coligação: NOVO
+30 - VAL (PEN , 15388 votos)	- Coligação:  PRTB / PROS / PEN
+31 - PAULO MESSINA (PROS , 15346 votos)	- Coligação:  PRTB / PROS / PEN
+32 - ROGERIO ROCAL (PTB, 15055 votos)	- Coligação: PTB
+33 - DR. JOÃO RICARDO (PMDB, 14994 votos)	- Coligação: PMDB
+34 - ÁTILA A. NUNES (PMDB, 14903 votos)	- Coligação: PMDB
+35 - JOÃO CABRAL (PMDB, 14152 votos)	- Coligação: PMDB
+36 - PROFESSOR UOSTON (PMDB, 13985 votos)	- Coligação: PMDB
+37 - EDSON ZANATA (PT , 13668 votos)	- Coligação:  PT / PC do B
+38 - RENATO MOURA (PDT, 13572 votos)	- Coligação: PDT
+39 - MARCELLO SICILIANO (PHS, 13553 votos)	- Coligação: PHS
+40 - ALEX COSTA (PTB, 13272 votos)	- Coligação: PTB
+41 - DRº JORGE MANAIA (SD , 13249 votos)	- Coligação:  SD / PSL
+42 - PAULO PINHEIRO (PSOL , 13141 votos)	- Coligação:  PSOL / PCB
+43 - ELTON BABÚ (PT , 12924 votos)	- Coligação:  PT / PC do B
+44 - S FERRAZ (PMDB, 12782 votos)	- Coligação: PMDB
+45 - JONES MOURA (PSD, 12722 votos)	- Coligação: PSD
+46 - DR GILBERTO (PMN, 12165 votos)	- Coligação: PMN
+47 - FERNANDO WILLIAM (PDT, 12055 votos)	- Coligação: PDT
+48 - SOLANGE AMARAL (PMDB, 11792 votos)	- Coligação: PMDB
+49 - LEILA DO FLAMENGO (PMDB, 11548 votos)	- Coligação: PMDB
+50 - DR. EDUARDO MOURA (PMDB, 11470 votos)	- Coligação: PMDB
+51 - DEL (PR, 11088 votos)	- Coligação: PR
+
+Teriam sido eleitos se a votação fosse majoritária, e não foram eleitos:
+(com sua posição no ranking de mais votados)
+29 - RENATA GUERRA (NOVO, 16064 votos)	- Coligação: NOVO
+34 - ÁTILA A. NUNES (PMDB, 14903 votos)	- Coligação: PMDB
+35 - JOÃO CABRAL (PMDB, 14152 votos)	- Coligação: PMDB
+36 - PROFESSOR UOSTON (PMDB, 13985 votos)	- Coligação: PMDB
+37 - EDSON ZANATA (PT , 13668 votos)	- Coligação:  PT / PC do B
+40 - ALEX COSTA (PTB, 13272 votos)	- Coligação: PTB
+43 - ELTON BABÚ (PT , 12924 votos)	- Coligação:  PT / PC do B
+44 - S FERRAZ (PMDB, 12782 votos)	- Coligação: PMDB
+48 - SOLANGE AMARAL (PMDB, 11792 votos)	- Coligação: PMDB
+49 - LEILA DO FLAMENGO (PMDB, 11548 votos)	- Coligação: PMDB
+50 - DR. EDUARDO MOURA (PMDB, 11470 votos)	- Coligação: PMDB
+51 - DEL (PR, 11088 votos)	- Coligação: PR
+
+Eleitos, que se beneficiaram do sistema proporcional:
+(com sua posição no ranking de mais votados)
+52 - LEONEL BRIZOLA NETO (PSOL , 11087 votos)	- Coligação:  PSOL / PCB
+53 - ELISEU KESSLER (PSD, 10777 votos)	- Coligação: PSD
+55 - FELIPE MICHEL (PSDB , 10300 votos)	- Coligação:  PSDB / PPS
+56 - CLÁUDIO CASTRO (PSC, 10262 votos)	- Coligação: PSC
+63 - PROFESSOR ADALMIR (PSDB , 8804 votos)	- Coligação:  PSDB / PPS
+65 - PROFESSOR CELIO LUPPARELLI (DEM, 8692 votos)	- Coligação: DEM
+67 - LUIZ CARLOS RAMOS FILHO (PTN, 8618 votos)	- Coligação: PTN
+71 - JAIR DA MENDES GOMES (PMN, 8112 votos)	- Coligação: PMN
+73 - ZICO BACANA (PHS, 7932 votos)	- Coligação: PHS
+74 - OTONI DE PAULA JR (PSC, 7801 votos)	- Coligação: PSC
+81 - DAVID MIRANDA (PSOL , 7012 votos)	- Coligação:  PSOL / PCB
+97 - ITALO CIBA (PT do B , 6023 votos)	- Coligação:  PT do B / PTC
+
+Votação (nominal) das coligações e número de candidatos eleitos:
+1 - Coligação: PMDB, 442283 votos, 10 candidatos eleitos.
+2 - Coligação:  PSOL / PCB, 252098 votos, 6 candidatos eleitos.
+3 - Coligação: DEM, 205159 votos, 4 candidatos eleitos.
+4 - Coligação: PSC, 165984 votos, 3 candidatos eleitos.
+5 - Coligação: PTB, 145249 votos, 3 candidatos eleitos.
+6 - Coligação: PP, 125959 votos, 2 candidatos eleitos.
+7 - Coligação: PRB, 125020 votos, 3 candidatos eleitos.
+8 - Coligação:  PSDB / PPS, 121316 votos, 3 candidatos eleitos.
+9 - Coligação:  PT / PC do B, 113935 votos, 2 candidatos eleitos.
+10 - Coligação:  PRTB / PROS / PEN, 109181 votos, 2 candidatos eleitos.
+11 - Coligação: PMN, 93745 votos, 2 candidatos eleitos.
+12 - Coligação: PDT, 93412 votos, 2 candidatos eleitos.
+13 - Coligação:  SD / PSL, 89916 votos, 2 candidatos eleitos.
+14 - Coligação: PHS, 87126 votos, 2 candidatos eleitos.
+15 - Coligação: PSD, 79789 votos, 2 candidatos eleitos.
+16 - Coligação: PTN, 76229 votos, 1 candidatos eleitos.
+17 - Coligação: NOVO, 73672 votos, 1 candidatos eleitos.
+18 - Coligação:  PT do B / PTC, 68433 votos, 1 candidatos eleitos.
+19 - Coligação:  PV / REDE / PPL, 47917 votos, 0 candidatos eleitos.
+20 - Coligação: PR, 35670 votos, 0 candidatos eleitos.
+21 - Coligação: PRP, 31708 votos, 0 candidatos eleitos.
+22 - Coligação: PSDC, 24712 votos, 0 candidatos eleitos.
+23 - Coligação: PSB, 24020 votos, 0 candidatos eleitos.
+24 - Coligação: PMB, 23567 votos, 0 candidatos eleitos.
+25 - Coligação: PSTU, 1382 votos, 0 candidatos eleitos.
+26 - Coligação: PCO, 149 votos, 0 candidatos eleitos.
+
+Votação (nominal) dos partidos e número de candidatos eleitos:
+1 - PMDB, 442283 votos, 10 candidatos eleitos
+2 - PSOL , 250031 votos, 6 candidatos eleitos
+3 - DEM, 205159 votos, 4 candidatos eleitos
+4 - PSC, 165984 votos, 3 candidatos eleitos
+5 - PTB, 145249 votos, 3 candidatos eleitos
+6 - PP, 125959 votos, 2 candidatos eleitos
+7 - PRB, 125020 votos, 3 candidatos eleitos
+8 - PSDB , 109975 votos, 3 candidatos eleitos
+9 - PT , 101631 votos, 2 candidatos eleitos
+10 - PMN, 93745 votos, 2 candidatos eleitos
+11 - PDT, 93412 votos, 2 candidatos eleitos
+12 - PHS, 87126 votos, 2 candidatos eleitos
+13 - SD , 81283 votos, 2 candidatos eleitos
+14 - PSD, 79789 votos, 2 candidatos eleitos
+15 - PTN, 76229 votos, 1 candidatos eleitos
+16 - NOVO, 73672 votos, 1 candidatos eleitos
+17 - PRTB , 60652 votos, 0 candidatos eleitos
+18 - PT do B , 56893 votos, 1 candidatos eleitos
+19 - REDE , 35917 votos, 0 candidatos eleitos
+20 - PR, 35670 votos, 0 candidatos eleitos
+21 - PRP, 31708 votos, 0 candidatos eleitos
+22 - PEN , 30608 votos, 1 candidatos eleitos
+23 - PSDC, 24712 votos, 0 candidatos eleitos
+24 - PSB, 24020 votos, 0 candidatos eleitos
+25 - PMB, 23567 votos, 0 candidatos eleitos
+26 - PROS , 17921 votos, 1 candidatos eleitos
+27 - PC do B , 12304 votos, 0 candidatos eleitos
+28 - PTC , 11540 votos, 0 candidatos eleitos
+29 - PPS , 11341 votos, 0 candidatos eleitos
+30 - PSL , 8633 votos, 0 candidatos eleitos
+31 - PV , 8568 votos, 0 candidatos eleitos
+32 - PPL , 3432 votos, 0 candidatos eleitos
+33 - PCB , 2067 votos, 0 candidatos eleitos
+34 - PSTU, 1382 votos, 0 candidatos eleitos
+35 - PCO, 149 votos, 0 candidatos eleitos
+
+Total de votos nominais: 2657631
